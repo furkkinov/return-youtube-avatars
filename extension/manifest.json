@@ -1,0 +1,26 @@
+{
+    "name": "Return YouTube Avatars",
+    "description": "Return YouTube Avatars!",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "index.js"
+    },
+    "permissions": [
+        "declarativeNetRequest",
+        "declarativeNetRequestFeedback"
+    ],
+    "host_permissions": [
+        "*://yt3.ggpht.com/*",
+        "*://*.youtube.com/*",
+        "*://youtube.furkkinov.top/*"
+    ],
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": {
+            "16": "16x16.png",
+            "48": "48x48.png",
+            "128": "128x128.png"
+        }
+    }
+}
